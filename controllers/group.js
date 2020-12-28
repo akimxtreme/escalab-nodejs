@@ -33,7 +33,9 @@ exports.read = (req, res) => {
 
 exports.update = (req, res) => {
     const group = req.group;
-    group.name = req.body.name;
+    if (req.body.name != undefined) { group.name = req.body.name; }
+    if (req.body.description != undefined) { group.description = req.body.description; }
+    if (req.body.kingdom != undefined) { group.kingdom = req.body.kingdom; }
     group.save((err, data) => {
         if (err) {
             return res.status(400).json({

@@ -30,7 +30,7 @@ const db = async () => {
             useCreateIndex: true, 
             useFindAndModify: false
         });
-        console.log('DB Connected');
+        console.log('DB connected successfully');
     } catch (error) {
         console.log('DB Connection Error', error);
     }
@@ -52,10 +52,10 @@ const swaggerOptions = {
         openapi: '3.0.0',
         info: {
             version: "1.0.0",
-            title: "Ecommerce API",
-            description: "Ecommerce API Information",
+            title: "Living Beings API",
+            description: "Living things of the world API Information",
             contact: {
-                name: "miguel_dev"
+                name: "domingo_dev"
             },
             servers: ["http://localhost:8001"]
         }
