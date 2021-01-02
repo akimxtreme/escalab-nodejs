@@ -16,7 +16,7 @@ const LivingBeingSchema = new mongoose.Schema(
         },
         description: {
             type: String,
-            required: true,
+            required: false,
             maxlength: 2000
         },
         classification: {
