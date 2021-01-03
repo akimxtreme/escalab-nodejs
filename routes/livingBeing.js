@@ -13,7 +13,7 @@ const { requireSignin, isAuth, isAdmin } = require("../controllers/auth");
 const { userById } = require("../controllers/user");
 
 // routes
-router.get("/living-being/:kingdomId", read);
+router.get("/living-being/:livingBeingId", read);
 router.post("/living-being/create/:userId", requireSignin, isAuth, isAdmin, create);
 router.put(
     "/living-being/:livingBeingId/:userId",

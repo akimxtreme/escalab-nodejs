@@ -33,7 +33,9 @@ exports.read = (req, res) => {
 
 exports.update = (req, res) => {
     const classification = req.classification;
-    classification.name = req.body.name;
+    if (req.body.name != undefined) { classification.name = req.body.name; }
+    if (req.body.description != undefined) { classification.description = req.body.description; }
+    if (req.body.group != undefined) { classification.group = req.body.group; }
     classification.save((err, data) => {
         if (err) {
             return res.status(400).json({

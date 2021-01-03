@@ -33,7 +33,9 @@ exports.read = (req, res) => {
 
 exports.update = (req, res) => {
     const livingbeing = req.livingbeing;
-    livingbeing.name = req.body.name;
+    if (req.body.name != undefined) { livingbeing.name = req.body.name; }
+    if (req.body.description != undefined) { livingbeing.description = req.body.description; }
+    if (req.body.classification != undefined) { livingbeing.classification = req.body.classification; }
     livingbeing.save((err, data) => {
         if (err) {
             return res.status(400).json({

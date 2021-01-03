@@ -17,7 +17,16 @@ exports.userById = (req, res, next, id) => {
 exports.read = (req, res) => {
     req.profile.hashed_password = undefined;
     req.profile.salt = undefined;
-    return res.json(req.profile);
+    //return res.json(req.profile);
+    return res.json({
+        _id: req.profile._id,
+        name: req.profile.name,
+        email: req.profile.email,
+        is_admin: (req.profile.role == 0 ? false : true),
+        role: req.profile.role,
+        createdAt: req.profile.createdAt,
+        updatedAt: req.profile.updatedAt
+    });
 };
 
 exports.update = (req, res) => {
