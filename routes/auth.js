@@ -9,13 +9,39 @@ const {
 const { userSignupValidator } = require("../validator");
 
 // routes
+/**
+ * @swagger   
+ * /api/signup: 
+ *  post:
+ *    summary: signup user
+ *    description: Use to request signup user
+ *    requestBody: 
+ *      content:
+ *        application/json:
+ *          schema:
+ *            properties:
+ *              name:
+ *                  type: string
+ *                  description: name user valid
+ *              email:
+ *                  type: string
+ *                  description: email user valid
+ *              password:
+ *                  type: string
+ *                  description: password user valid
+ *    responses:
+ *      "200":
+ *         description: A successful response
+ *      "400":
+ *         description: A bad request response
+ */
 router.post("/signup", userSignupValidator, signup);
 
 /**
  * @swagger   
  * /api/signin: 
  *  post:
- *    summary: signin user
+ *    summary: (signin / login) user
  *    description: Use to request signin user
  *    requestBody: 
  *      content:
