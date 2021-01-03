@@ -19,3 +19,7 @@ Proyecto Final Node Backend
 * Levantar el servidor con el comando npm start
 
 * Levantar mongoDB.
+
+# Collection de postman
+
+* https://documenter.getpostman.com/view/7848976/TVsydjkk
