@@ -1,17 +1,21 @@
 # escalab-nodejs
+
 Proyecto Final Node Backend
 
-Version de node : v12.18.2
+# Versiones de Node y MongoDB
 
-# Instrucciones
+* Version de node : v12.18.2
 
-Debes tener mongoDB instalado y configurado en tu sistema operativo.
+* Version de MongoDB: v4.4.0
 
-Tener el ambiente de node instalado en tu sistema operativo.
+# Instrucciones para Levantar el Proyecto
 
-Ejecutar el comando npm install
+* Debes tener mongoDB instalado y configurado en tu sistema operativo.
 
-Levantar el servidor.
+* Debes Tener el ambiente de node instalado en tu sistema operativo.
 
-Levantar mongoDB.
+* Ejecutar el comando <npm install> para instalar los paquetes que se encuentran descritos en el package.json
 
+* Levantar el servidor con <npm start>
+
+* Levantar mongoDB.
