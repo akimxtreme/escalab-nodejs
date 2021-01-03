@@ -13,6 +13,25 @@ const { requireSignin, isAuth, isAdmin } = require("../controllers/auth");
 const { userById } = require("../controllers/user");
 
 // routes
+/**
+ * @swagger   
+ * /api/living-being/{id}: 
+ *  get:
+ *    summary: Read LivingBeing - (Leer Ser Vivo)
+ *    description: Retorna el objeto LivingBeing a partir de un id dado.
+ *    parameters:
+ *      - name: id
+ *        in: path
+ *        description: living_being_id
+ *        required: true
+ *        schema:
+ *          type: string
+ *    responses:
+ *      "200":
+ *         description: A successful response
+ *      "400":
+ *         description: A bad request response
+ */
 router.get("/living-being/:livingBeingId", read);
 router.post("/living-being/create/:userId", requireSignin, isAuth, isAdmin, create);
 router.put(
@@ -29,6 +48,18 @@ router.delete(
     isAdmin,
     remove
 );
+/**
+ * @swagger   
+ * /api/living-beings: 
+ *  get:
+ *    summary: List Living Being - (Listado de Seres Vivos)
+ *    description: Listado de todos los Seres Vivos
+ *    responses:
+ *      "200":
+ *         description: A successful response
+ *      "400":
+ *         description: A bad request response
+ */
 router.get("/living-beings", list);
 
 // params
