@@ -1,6 +1,8 @@
-# escalab-nodejs
+# Proyecto : escalab-nodejs
 
-Proyecto Final Node Backend
+* Proyecto Final Node Backend
+
+* Descripción: El proyecto esta enfocado en una biblioteca de información que organiza los Seres Vivos, esta organizado por Reinos, luego por grupos, clasificaciones y la información del Ser Vivo como tal.
 
 # Versiones de Node y MongoDB
 
@@ -23,3 +25,8 @@ Proyecto Final Node Backend
 # Collection de postman
 
 * https://documenter.getpostman.com/view/7848976/TVsydjkk
+
+# Collection en Swager Local
+
+* http://localhost:8000/api-docs
+
