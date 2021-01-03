@@ -26,7 +26,7 @@
 
 * https://documenter.getpostman.com/view/7848976/TVsydjkk
 
-# Collection en Swager Local
+# Collection de Swager en Servidor Local
 
 * http://localhost:8000/api-docs
 
