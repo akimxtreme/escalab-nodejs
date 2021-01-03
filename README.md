@@ -12,10 +12,10 @@ Proyecto Final Node Backend
 
 * Debes tener mongoDB instalado y configurado en tu sistema operativo.
 
-* Debes Tener el ambiente de node instalado en tu sistema operativo.
+* Debes tener el ambiente de node instalado en tu sistema operativo.
 
-* Ejecutar el comando <npm install> para instalar los paquetes que se encuentran descritos en el package.json
+* Ejecutar el comando npm install para instalar los paquetes que se encuentran descritos en el package.json
 
-* Levantar el servidor con <npm start>
+* Levantar el servidor con el comando npm start
 
 * Levantar mongoDB.
